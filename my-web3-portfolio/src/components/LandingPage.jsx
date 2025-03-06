@@ -1,10 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
+import ParticlesBackground from "./ParticlesBackground"; // Import the particles
 import styles from "../styles/LandingPage.module.css";
 
 const LandingPage = () => {
   return (
     <div className={styles.landingContainer}>
+      {/* Floating Particles */}
+      <ParticlesBackground />
+
       {/* Animated Intro Text */}
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
