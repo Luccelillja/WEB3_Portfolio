@@ -1,28 +1,22 @@
-//
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useNavigate,
-} from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import LandingPage from "./components/LandingPage";
-import PortfolioPage from "./components/PortfolioPage"; // New Portfolio Page
+import PortfolioPage from "./components/PortfolioPage";
 import styles from "./App.module.css";
 
 const App = () => {
-  return (
-    <Router>
-      <div className={styles.appContainer}>
-        <Routes>
-          {/* Landing Page Route */}
-          <Route path="/" element={<LandingPage />} />
+  const location = useLocation(); // ✅ Ensures transitions work properly
 
-          {/* Portfolio Page Route */}
+  return (
+    <div className={styles.appContainer}>
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<LandingPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
         </Routes>
-      </div>
-    </Router>
+      </AnimatePresence>
+    </div>
   );
 };
 
