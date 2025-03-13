@@ -20,7 +20,8 @@
   max-width: 900px;
 }
 
-img {
+/* ✅ This only affects images inside the Gallery Overlay */
+.overlay img {
   width: 100%;
   max-height: 80vh;
   border-radius: 10px;

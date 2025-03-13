@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import About from "./About";
-import Portfolio from "./Portfolio";
+import MyWork from "./MyWork";
 import styles from "../styles/PortfolioPage.module.css";
 
 const PortfolioPage = () => {
@@ -16,7 +16,7 @@ const PortfolioPage = () => {
         <About />
       </div>
       <div className={styles.portfolioSection}>
-        <Portfolio />
+        <MyWork />
       </div>
     </motion.div>
   );

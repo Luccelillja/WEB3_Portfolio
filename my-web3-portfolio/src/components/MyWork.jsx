@@ -1,14 +1,6 @@
-// import React from "react";
-
-// function Portfolio() {
-//   return <div>Portfolio</div>;
-// }
-
-// export default Portfolio;
-
 import React, { useState } from "react";
 import GalleryOverlay from "./GalleryOverlay";
-import styles from "../styles/Portfolio.module.css";
+import styles from "../styles/MyWork.module.css";
 
 const Portfolio = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,14 +16,27 @@ const Portfolio = () => {
       ],
     },
     {
-      name: "Crypto Tracker",
+      name: "Crypto Tracker App",
       images: [
-        "https://via.placeholder.com/800x500/3388FF/FFFFFF?text=Crypto+App+1",
-        "https://via.placeholder.com/800x500/FF3388/FFFFFF?text=Crypto+App+2",
+        "https://miro.medium.com/v2/resize:fit:1400/1*e3bibHLzf-ZjQrWJ_JBCew.jpeg",
+        "https://cryptopro.app/wp-content/uploads/2020/08/crypto-pro-portfolio-tracker.png",
+      ],
+    },
+    {
+      name: "Camping Site App",
+      images: [
+        "https://miro.medium.com/v2/resize:fit:1400/1*e3bibHLzf-ZjQrWJ_JBCew.jpeg",
+        "https://cryptopro.app/wp-content/uploads/2020/08/crypto-pro-portfolio-tracker.png",
+      ],
+    },
+    {
+      name: "Challege Tracker App",
+      images: [
+        "https://cryptopro.app/wp-content/uploads/2020/08/crypto-pro-portfolio-tracker.png",
+        "https://miro.medium.com/v2/resize:fit:1400/1*e3bibHLzf-ZjQrWJ_JBCew.jpeg",
       ],
     },
   ];
-
   // Open the gallery with selected images
   const openGallery = (images) => {
     setSelectedImages(images);
@@ -40,7 +45,7 @@ const Portfolio = () => {
 
   return (
     <div className={styles.portfolioContainer}>
-      <h2 className={styles.title}>My Work</h2>
+      <h2 className={styles.myWorkTitle}>My Work</h2>
       <div className={styles.projects}>
         {projects.map((project, index) => (
           <div

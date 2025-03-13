@@ -28,8 +28,9 @@ const GalleryOverlay = ({ images, isOpen, onClose }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
+          onClick={onClose} // ✅ Close when clicking the backdrop
         >
-          <div className={styles.content}>
+          <div className={styles.content} onClick={(e) => e.stopPropagation()}>
             <button className={styles.closeButton} onClick={onClose}>
               ✖
             </button>
