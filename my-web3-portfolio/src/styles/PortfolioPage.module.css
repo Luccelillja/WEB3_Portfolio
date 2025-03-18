@@ -7,13 +7,24 @@
   width: 100vw;
   min-height: 100vh;
   background-color: #1e293b;
-  padding: 50px 20px;
+  padding: 50px 200px;
   text-align: center;
 }
 
 .aboutSection,
-.portfolioSection {
+.portfolioSection,
+.achievementsSection {
   max-width: 1200px;
   width: 100%;
   text-align: center;
+  margin-bottom: 80px; /* Increase spacing between sections */
+}
+
+.sectionDivider {
+  width: 80%;
+  height: 2px;
+  background: rgba(0, 255, 170, 0.5); /* Soft glowing effect */
+  margin: 50px auto; /* Spacing between sections */
+  box-shadow: 0px 0px 10px rgba(0, 255, 170, 0.8);
+  border-radius: 5px;
 }

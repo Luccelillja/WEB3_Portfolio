@@ -13,12 +13,33 @@ const PortfolioPage = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
+      {/* About Section */}
       <div className={styles.aboutSection}>
         <About />
       </div>
+
+      {/* Section Divider */}
+      <motion.div
+        className={styles.sectionDivider}
+        initial={{ opacity: 0, scaleX: 0 }}
+        animate={{ opacity: 1, scaleX: 1 }}
+        transition={{ duration: 1 }}
+      ></motion.div>
+
+      {/* My Work Section */}
       <div className={styles.portfolioSection}>
         <MyWork />
       </div>
+
+      {/* Section Divider */}
+      <motion.div
+        className={styles.sectionDivider}
+        initial={{ opacity: 0, scaleX: 0 }}
+        animate={{ opacity: 1, scaleX: 1 }}
+        transition={{ duration: 1 }}
+      ></motion.div>
+
+      {/* Achievements Section */}
       <div className={styles.achievementsSection}>
         <Achievements />
       </div>
