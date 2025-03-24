@@ -1,0 +1,13 @@
+.card {
+  perspective: 1000px;
+}
+
+.cardInner {
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.card:hover .cardInner {
+  transform: rotateY(10deg) rotateX(10deg) scale(1.03);
+}

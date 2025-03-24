@@ -1,63 +1,63 @@
 .achievementsContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
-  /* padding: 80px 20px; */
-  /* background: linear-gradient(135deg, #0f172a, #1e293b); */
-  color: white;
+  /* padding: 60px 20px; */
+  /* background: #1e293b; */
 }
 
 .title {
   font-size: 2.5rem;
   color: #00ffab;
-  text-shadow: 0px 0px 15px rgba(0, 255, 170, 0.8);
-  /* margin-bottom: 20px; */
+  margin-bottom: 40px;
+  text-shadow: 0px 0px 15px rgba(0, 255, 170, 0.7);
 }
 
-/* .grid {
+.grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  max-width: 900px;
-} */
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(200px, 1fr)
-  ); /* Dynamic columns */
-  gap: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  gap: 30px;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(0, 255, 170, 0.2);
+  perspective: 1000px;
+}
+
+.cardInner {
+  width: 260px;
+  height: 180px;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 12px;
+  background: #1f2937;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 255, 170, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  min-width: 200px;
-  transition: 0.3s;
 }
 
-.card h3 {
+.card:hover .cardInner {
+  transform: rotateY(10deg) rotateX(10deg) scale(1.03);
+  box-shadow: 0px 0px 20px rgba(0, 255, 170, 0.5);
+}
+
+.cardInner h3 {
+  font-size: 1.2rem;
   color: #00ffab;
-  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
-.card p {
+.cardInner p {
+  margin: 0;
   color: #b5f3e8;
-  font-size: 1rem;
 }
 
-.card span {
-  display: block;
-  margin-top: 10px;
+.cardInner span {
   font-size: 0.9rem;
   color: #888;
 }
