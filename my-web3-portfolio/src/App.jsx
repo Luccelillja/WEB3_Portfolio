@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import LandingPage from "./components/LandingPage";
 import PortfolioPage from "./components/PortfolioPage";
 import styles from "./App.module.css";
+// import Navbar from "./components/Navbar";
 
 const App = () => {
   const location = useLocation(); // ✅ Ensures transitions work properly
@@ -11,6 +12,7 @@ const App = () => {
   return (
     <div className={styles.appContainer}>
       <AnimatePresence mode="wait">
+        {/* <Navbar /> */}
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<LandingPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />

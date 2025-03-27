@@ -16,6 +16,7 @@ html {
   min-height: 100vh;
   background-color: #0f172a; /* Ensures consistent dark background */
   overflow-x: hidden; /* Prevents horizontal scrolling */
+  /* scroll-behavior: smooth; */
 }
 
 /* Ensures root div covers the full screen */

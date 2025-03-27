@@ -11,7 +11,7 @@ const achievements = [
   {
     title: "The Web Developer Bootcamp",
     platform: "Colt Steele",
-    year: "2023",
+    year: "2022",
   },
   {
     title: "React - The Complete Guide",
@@ -21,7 +21,7 @@ const achievements = [
   {
     title: "React Native - The Practical Guide",
     platform: "Maximilian Schwarzmüller",
-    year: "2023",
+    year: "In Progress",
   },
 ];
 

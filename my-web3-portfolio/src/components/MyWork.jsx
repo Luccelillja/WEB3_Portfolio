@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import GalleryOverlay from "./GalleryOverlay";
 import styles from "../styles/MyWork.module.css";
 
@@ -30,42 +31,51 @@ const Portfolio = () => {
       ],
     },
     {
-      name: "Challege Tracker App",
+      name: "Challenge Tracker App",
       images: [
         "https://cryptopro.app/wp-content/uploads/2020/08/crypto-pro-portfolio-tracker.png",
         "https://miro.medium.com/v2/resize:fit:1400/1*e3bibHLzf-ZjQrWJ_JBCew.jpeg",
       ],
     },
   ];
-  // Open the gallery with selected images
+
   const openGallery = (images) => {
     setSelectedImages(images);
     setIsOpen(true);
   };
 
   return (
-    <div className={styles.portfolioContainer}>
+    <motion.div
+      className={styles.portfolioContainer}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.8 }}
+    >
       <h2 className={styles.myWorkTitle}>My Work</h2>
+
       <div className={styles.projects}>
         {projects.map((project, index) => (
-          <div
+          <motion.div
             key={index}
             className={styles.projectCard}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.98 }}
+            transition={{ type: "spring", stiffness: 300 }}
             onClick={() => openGallery(project.images)}
           >
             <h3>{project.name}</h3>
             <p>Click to view screenshots</p>
-          </div>
+          </motion.div>
         ))}
       </div>
 
-      {/* Overlay Component */}
       <GalleryOverlay
         images={selectedImages}
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
       />
-    </div>
+    </motion.div>
   );
 };
 

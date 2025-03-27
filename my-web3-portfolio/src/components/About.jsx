@@ -6,7 +6,7 @@ const About = () => {
   return (
     <motion.div
       className={styles.aboutContainer}
-      initial={{ opacity: 0, y: 20 }} // ✅ Start slightly lower
+      initial={{ opacity: 0, y: 40 }} // ✅ Start slightly lower
       animate={{ opacity: 1, y: 0 }} // ✅ Fade in and move up
       exit={{ opacity: 0, y: 20, transition: { duration: 0.5 } }} // ✅ Exit smoothly
       transition={{ duration: 1 }}
