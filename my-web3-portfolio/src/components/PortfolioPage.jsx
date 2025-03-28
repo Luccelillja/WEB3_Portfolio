@@ -5,6 +5,7 @@ import MyWork from "./MyWork";
 import Achievements from "./Achievements";
 import styles from "../styles/PortfolioPage.module.css";
 import SectionDivider from "./SectionDivider";
+import Footer from "./Footer";
 
 const PortfolioPage = () => {
   return (
@@ -24,6 +25,7 @@ const PortfolioPage = () => {
       <motion.div id="achievements" className={styles.achievementsSection}>
         <Achievements />
       </motion.div>
+      <Footer />
     </motion.div>
   );
 };
