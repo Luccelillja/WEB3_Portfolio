@@ -10,7 +10,7 @@ const Footer = () => {
     <motion.footer
       ref={ref}
       className={styles.footer}
-      initial={{ opacity: 0, y: 40 }}
+      // initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
     >
