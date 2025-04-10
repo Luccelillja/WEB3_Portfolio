@@ -29,15 +29,6 @@ const Portfolio = () => {
     //   status: "inProgress",
     // },
     {
-      name: "Food Order App",
-      images: [
-        "/images/food-app/Food-order2.png",
-        "/images/food-app/Food-order3.png",
-        "/images/food-app/Food-order1.png",
-      ],
-      status: "complete",
-    },
-    {
       name: "Challenge Tracker App",
       images: [
         "/images/challenge-app/Challenge-App2.png",
@@ -58,6 +49,15 @@ const Portfolio = () => {
         "/images/camping-app/Camping-site3.png",
         "/images/camping-app/Camping-site1.png",
         "/images/camping-app/Camping-site4.png",
+      ],
+      status: "complete",
+    },
+    {
+      name: "Food Order App",
+      images: [
+        "/images/food-app/Food-order2.png",
+        "/images/food-app/Food-order3.png",
+        "/images/food-app/Food-order1.png",
       ],
       status: "complete",
     },
