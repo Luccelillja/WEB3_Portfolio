@@ -1,8 +1,17 @@
 /* src/styles/SectionDivider.module.css */
-.divider {
+/* .divider {
   height: 2px;
   width: 60%;
   margin: 80px auto;
+  background: #00ffab;
+  transform-origin: center;
+  box-shadow: 0 0 10px #00ffab;
+  border-radius: 999px;
+} */
+.divider {
+  height: 2px;
+  width: 60%;
+  margin: 60px auto; /* Reduced from 80px for better balance */
   background: #00ffab;
   transform-origin: center;
   box-shadow: 0 0 10px #00ffab;

@@ -10,32 +10,56 @@ const Portfolio = () => {
   // Sample Projects
   const projects = [
     {
+      name: "Launchpad App",
+      images: [
+        "/images/launchpad-app/launchpad-app1.png",
+        "/images/launchpad-app/launchpad-app2.png",
+        "/images/launchpad-app/launchpad-app3.png",
+        "/images/launchpad-app/launchpad-app4.png",
+        "/images/launchpad-app/launchpad-app5.png",
+      ],
+      status: "inProgress",
+    },
+    // {
+    //   name: "Crypto Tracker App",
+    //   images: [
+    //     "https://miro.medium.com/v2/resize:fit:1400/1*e3bibHLzf-ZjQrWJ_JBCew.jpeg",
+    //     "https://cryptopro.app/wp-content/uploads/2020/08/crypto-pro-portfolio-tracker.png",
+    //   ],
+    //   status: "inProgress",
+    // },
+    {
       name: "Food Order App",
       images: [
-        "https://www.businessofapps.com/wp-content/uploads/2022/01/emizen_tech_food_deliver_img1.png",
-        "https://i.ytimg.com/vi/9nWcPPHBzMk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCAtRdTDBcOeq5ys33KJwTXLcqNcA",
+        "/images/food-app/Food-order2.png",
+        "/images/food-app/Food-order3.png",
+        "/images/food-app/Food-order1.png",
       ],
-    },
-    {
-      name: "Crypto Tracker App",
-      images: [
-        "https://miro.medium.com/v2/resize:fit:1400/1*e3bibHLzf-ZjQrWJ_JBCew.jpeg",
-        "https://cryptopro.app/wp-content/uploads/2020/08/crypto-pro-portfolio-tracker.png",
-      ],
-    },
-    {
-      name: "Camping Site App",
-      images: [
-        "https://miro.medium.com/v2/resize:fit:1400/1*e3bibHLzf-ZjQrWJ_JBCew.jpeg",
-        "https://cryptopro.app/wp-content/uploads/2020/08/crypto-pro-portfolio-tracker.png",
-      ],
+      status: "complete",
     },
     {
       name: "Challenge Tracker App",
       images: [
-        "https://cryptopro.app/wp-content/uploads/2020/08/crypto-pro-portfolio-tracker.png",
-        "https://miro.medium.com/v2/resize:fit:1400/1*e3bibHLzf-ZjQrWJ_JBCew.jpeg",
+        "/images/challenge-app/Challenge-App2.png",
+        "/images/challenge-app/Challenge-App3.png",
+        "/images/challenge-app/Challenge-App4.png",
+        "/images/challenge-app/Challenge-App5.png",
+        "/images/challenge-app/Challenge-App6.png",
+        "/images/challenge-app/Challenge-App7.png",
+        "/images/challenge-app/Challenge-App8.png",
+        "/images/challenge-app/Challenge-App9.png",
       ],
+      status: "complete",
+    },
+    {
+      name: "Camping Site App",
+      images: [
+        "/images/camping-app/Camping-site2.png",
+        "/images/camping-app/Camping-site3.png",
+        "/images/camping-app/Camping-site1.png",
+        "/images/camping-app/Camping-site4.png",
+      ],
+      status: "complete",
     },
   ];
 
@@ -65,7 +89,12 @@ const Portfolio = () => {
             onClick={() => openGallery(project.images)}
           >
             <h3>{project.name}</h3>
-            <p>Click to view screenshots</p>
+
+            {project.status === "inProgress" ? (
+              <p className={styles.inProgressTag}>🚧 Coming Soon</p>
+            ) : (
+              <p>Click to view screenshots</p>
+            )}
           </motion.div>
         ))}
       </div>
