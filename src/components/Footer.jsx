@@ -40,7 +40,7 @@ const Footer = () => {
         >
           LinkedIn
         </a> */}
-        <a href="mailto:your.email@example.com">Email</a>
+        <a href="mailto:Lucce@lillja.com">Email</a>
       </div>
 
       {/* 👇 Copyright */}
