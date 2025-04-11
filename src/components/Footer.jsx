@@ -14,7 +14,6 @@ const Footer = () => {
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
     >
-      {/* 👇 Quote */}
       <motion.blockquote
         className={styles.quote}
         initial={{ opacity: 0, y: 10 }}
