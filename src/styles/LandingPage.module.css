@@ -27,7 +27,6 @@
   text-align: center;
 }
 
-/* Subtitle */
 .subtitle {
   font-size: 1.5rem;
   color: #b5f3e8;
@@ -35,7 +34,6 @@
   text-align: center;
 }
 
-/* Glowing CTA Button */
 .ctaButton {
   margin-top: 20px;
   padding: 12px 24px;

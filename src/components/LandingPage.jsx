@@ -1,20 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-// import ParticlesBackground from "./ParticlesBackground";
 import styles from "../styles/LandingPage.module.css";
 
-// Animation Variants
 const fadeInFromTop = {
   hidden: { opacity: 0, y: -50 },
   visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-  exit: { opacity: 0, y: -50, transition: { duration: 0.5 } }, // ✅ Exit animation
+  exit: { opacity: 0, y: -50, transition: { duration: 0.5 } },
 };
 
 const fadeInFromLeft = {
   hidden: { opacity: 0, x: -50 },
   visible: { opacity: 1, x: 0, transition: { delay: 0.3, duration: 1 } },
-  exit: { opacity: 0, x: -50, transition: { duration: 0.5 } }, // ✅ Exit animation
+  exit: { opacity: 0, x: -50, transition: { duration: 0.5 } },
 };
 
 const LandingPage = () => {
@@ -25,10 +23,8 @@ const LandingPage = () => {
       className={styles.landingContainer}
       initial="hidden"
       animate="visible"
-      exit={{ opacity: 0, y: -20, transition: { duration: 0.5 } }} // ✅ Smooth exit
+      exit={{ opacity: 0, y: -20, transition: { duration: 0.5 } }}
     >
-      {/* <ParticlesBackground /> */}
-
       <motion.h1 className={styles.title} variants={fadeInFromTop}>
         Building the Future of the Web
       </motion.h1>
@@ -45,7 +41,7 @@ const LandingPage = () => {
           scale: 1,
           transition: { delay: 0.1, duration: 0.1 },
         }}
-        exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.3 } }} // ✅ Button exit animation
+        exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.3 } }}
         whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
         whileTap={{ scale: 0.95 }}
         onClick={() => navigate("/portfolio")}

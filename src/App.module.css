@@ -1,23 +1,20 @@
-/* Main container that holds everything */
 .appContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #0f172a;
-  min-height: 100vh; /* Ensures the app covers the full screen */
+  min-height: 100vh;
 }
 
-/* The Portfolio section (hidden by default) */
 .portfolioContainer {
   width: 100%;
-  background-color: #1e293b; /* Slightly different background for contrast */
+  background-color: #1e293b;
   padding: 50px 0;
   text-align: center;
-  opacity: 0; /* Initially hidden */
-  animation: fadeIn 1s ease-in-out forwards; /* Fade-in effect */
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
-/* Smooth fade-in animation */
 @keyframes fadeIn {
   from {
     opacity: 0;

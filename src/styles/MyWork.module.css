@@ -17,7 +17,6 @@
   text-shadow: 0px 0px 15px rgba(0, 255, 170, 0.8);
 }
 
-/* 🌟 Your 2-column layout */
 .projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -27,7 +26,6 @@
   margin: 0 auto;
 }
 
-/* 🛠️ Center the last card on its own row when total items are odd */
 .projects > .projectCard:nth-child(odd):last-child {
   grid-column: 1 / -1;
   justify-self: center;
@@ -65,7 +63,7 @@
   color: rgba(255, 255, 255, 0.7);
 }
 .inProgressTag {
-  color: #ffc107; /* Bright amber for 'under construction' feel */
+  color: #ffc107;
   font-weight: bold;
   font-size: 1rem;
   margin-top: 10px;
@@ -91,7 +89,6 @@
   box-shadow: 0px 0px 15px rgba(0, 255, 170, 1);
 }
 
-/* Optional: Responsive stacking for smaller screens */
 @media (max-width: 768px) {
   .projects {
     grid-template-columns: 1fr;

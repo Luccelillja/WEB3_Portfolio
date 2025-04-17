@@ -42,7 +42,6 @@ const Footer = () => {
         <a href="mailto:Lucce@lillja.com">Email</a>
       </div>
 
-      {/* 👇 Copyright */}
       <p className={styles.copy}>© {new Date().getFullYear()} Carl - Lucas</p>
     </motion.footer>
   );

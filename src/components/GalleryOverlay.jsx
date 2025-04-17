@@ -5,7 +5,6 @@ import styles from "../styles/GalleryOverlay.module.css";
 const GalleryOverlay = ({ images, isOpen, onClose }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Close overlay when pressing ESC
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "Escape") onClose();
@@ -28,7 +27,7 @@ const GalleryOverlay = ({ images, isOpen, onClose }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          onClick={onClose} // ✅ Close when clicking the backdrop
+          onClick={onClose}
         >
           <div className={styles.content} onClick={(e) => e.stopPropagation()}>
             <button className={styles.closeButton} onClick={onClose}>

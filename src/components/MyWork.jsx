@@ -7,7 +7,6 @@ const Portfolio = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedImages, setSelectedImages] = useState([]);
 
-  // Sample Projects
   const projects = [
     {
       name: "Launchpad App",
