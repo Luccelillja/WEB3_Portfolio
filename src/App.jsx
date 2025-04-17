@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import LandingPage from "./components/LandingPage";
 import PortfolioPage from "./components/PortfolioPage";
 import styles from "./App.module.css";
+import { Analytics } from "@vercel/analytics/react";
 // import Navbar from "./components/Navbar";
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/portfolio" element={<PortfolioPage />} />
         </Routes>
       </AnimatePresence>
+      <Analytics />
     </div>
   );
 };
