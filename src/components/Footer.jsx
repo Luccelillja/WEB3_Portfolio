@@ -32,13 +32,13 @@ const Footer = () => {
         >
           GitHub
         </a>
-        {/* <a
-          href="https://linkedin.com/in/YOUR-LINK"
+        <a
+          href="https://www.linkedin.com/in/carl-lucas-m-w-lillja-47a8b1122/"
           target="_blank"
           rel="noreferrer"
         >
           LinkedIn
-        </a> */}
+        </a>
         <a href="mailto:Lucce@lillja.com">Email</a>
       </div>
 
