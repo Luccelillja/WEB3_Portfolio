@@ -19,14 +19,16 @@ const Portfolio = () => {
       ],
       status: "inProgress",
     },
-    // {
-    //   name: "Crypto Tracker App",
-    //   images: [
-    //     "https://miro.medium.com/v2/resize:fit:1400/1*e3bibHLzf-ZjQrWJ_JBCew.jpeg",
-    //     "https://cryptopro.app/wp-content/uploads/2020/08/crypto-pro-portfolio-tracker.png",
-    //   ],
-    //   status: "inProgress",
-    // },
+    {
+      name: "Crypto Tracker App",
+      images: [
+        "/images/crypto-tracker-app/crypto-tracker-app1.png",
+        "/images/crypto-tracker-app/crypto-tracker-app2.png",
+        "/images/crypto-tracker-app/crypto-tracker-app3.png",
+        "/images/crypto-tracker-app/crypto-tracker-app4.png",
+      ],
+      status: "inProgress",
+    },
     {
       name: "Challenge Tracker App",
       images: [
